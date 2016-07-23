@@ -1,0 +1,28 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+i.contact {
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 3% 3% 3% 3%;
+  color: rgb(106, 106, 106);
+}
+
+i.fa-linkedin:hover {
+  color: rgb(26, 135, 189);
+}
+i.fa-github:hover {
+  color: black;
+}
+i.fa-twitter:hover {
+  color: rgb(41, 178, 255);
+}
+i.fa-instagram:hover {
+  color: rgb(114,74,189);
+}
+i.fa-angellist:hover {
+  color: rgb(255, 94, 94);
+}

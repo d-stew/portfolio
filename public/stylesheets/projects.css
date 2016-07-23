@@ -1,0 +1,13 @@
+div.project {
+  height: 300px;
+}
+
+h1#twang {
+  font-family: 'Raleway', sans-serif;
+}
+h1#gogo {
+  font-family: 'Pacifico', cursive;
+}
+img#speed {
+  padding-top: 5%;
+}

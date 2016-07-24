@@ -1,0 +1,35 @@
+div#typed {
+  margin-top: 22%;
+}
+
+span.typed {
+  font-size: 56px;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(54, 144, 238);
+  text-align: center;
+  margin-left: 3%;
+}
+
+.typed-cursor{
+    font-size: 56px;
+    color: rgb(54, 144, 238);
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

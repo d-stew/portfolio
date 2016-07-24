@@ -3,16 +3,72 @@
 
     <div class='col-md-2 col-md-offset-1 navbox'>
       <div class='navbox-menu'>
-        <h3 ng-click="show('projects')" class='menu'>PROJECTS</h3>
-        <h3 ng-click="show('experience')" class='menu'>EXPERIENCE</h3>
-        <h3 class='menu'>BIO</h3>
-        <h3 class='menu'>RESUME</h3>
-        <h3 class='menu'>CONTACT</h3>
+
+        <!-- PROJECTS SECTION -->
+        <h3 ng-click="show('projects')" class='menu'>
+          <span
+            class="glyphicon glyphicon-plus"
+            ng-class="{'active': active !== 'projects',
+                       'inactive': active === 'projects'}">
+          </span>
+          <span
+            class="glyphicon glyphicon-minus"
+            ng-class="{'active': active === 'projects',
+                       'inactive': active !== 'projects'}">
+           </span>
+          PROJECTS
+        </h3>
+        <div class='menu-details' ng-class="{'active': active === 'projects', 'inactive': active !== 'projects'}">
+          <p>twang</p>
+          <p>gogoColorado</p>
+          <p>EasySpeak</p>
+          <p>gnosh.</p>
+          <p>Speed CandiDating</p>
+        </div>
+        <!-- END PROJECTS SECTION -->
+
+        <!-- EXPERIENCE SECTION -->
+        <h3 ng-click="show('experience')" class='menu'>
+          <span
+            class="glyphicon glyphicon-plus"
+            ng-class="{'active': active !== 'experience',
+                       'inactive': active === 'experience'}">
+          </span>
+          <span
+            class="glyphicon glyphicon-minus"
+            ng-class="{'active': active === 'experience',
+                       'inactive': active !== 'experience'}">
+           </span>
+          EXPERIENCE
+        </h3>
+        <div class='menu-details' ng-class="{'active': active === 'experience', 'inactive': active !== 'experience'}">
+          <p>Galvanize</p>
+          <p>Tennyson Center for Children</p>
+          <p>Hidden Valley Camp</p>
+          <p>Australia</p>
+          <p>Law Office of Curtis E. Shirley</p>
+          <p>Human Rights Intern</p>
+        </div>
+        <!-- END EXPERIENCE SECTION -->
+
+
+        <h3 class='menu'>
+          <span class="glyphicon glyphicon-plus"></span>
+          BIO
+        </h3>
+        <h3 class='menu'>
+          <span class="glyphicon glyphicon-plus"></span>
+          RESUME
+        </h3>
+        <h3 class='menu'>
+          <span class="glyphicon glyphicon-plus"></span>
+          CONTACT
+        </h3>
       </div>
     </div>
 
-    <!-- PROJECTS -->
-    <div class='col-md-9 col-md-offset-3 projects off' id='projects'>
+
+    <!-- <div class='col-md-9 col-md-offset-3 projects off' id='projects'>
       <div class='menu text-center'>
         <h4 class='projects text-center' id='twang'>twang</h4>
         <h4 class='projects text-center' id='gogo'>gogoColorado</h4>
@@ -20,16 +76,24 @@
       </div>
       <div class='menu text-center'>
         <h4 class='projects text-center' id='gnosh'><b>gnosh.</b></h4>
-        <h4 class='projects text-center' id='speedCandi'>
-          <span id='speed'>Speed</span>
-          <span id='candi'>C a n d i D a t i n g</span>
-        </h4>
-        <!-- <img src='/images/speed-candi.png'> -->
-
+        <h4 class='projects text-center' id='speedCandi'>Speed C a n d i D a t i n g</h4>
+        <img src='/images/speed-candi.png'>
       </div>
+    </div> -->
+    <div class='col-md-9 col-md-offset-3' id='typed'>
+      <script>
+      $(function(){
+          $(".typed").typed({
+              strings: ["Hi there!^1000 I'm Daniel. ^2000",
+              "Welcome to my portfolio site."],
+              typeSpeed: 10
+          });
+      });
+      </script>
+      <span class="typed"></span>
     </div>
 
-    <div class='col-md-2 col-md-offset-3 projects off' id='experience'>
+    <!-- <div class='col-md-2 col-md-offset-3 projects off' id='experience'>
       <div class='menu'>
         <h4 class='menu text-center'>Youth Treatment Counselor</h4>
         <p class='description'>Tennyson Center for Children</p>
@@ -46,7 +110,7 @@
         <h4 class='menu text-center'>Human Rights Intern</h4>
         <p class='description'></p>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </div>

@@ -1,11 +1,11 @@
 /* SIDE NAV*/
 div.navbox {
   position: absolute;
-  margin-left: 6%;
+  margin-left: 5%;
   top: 8%;
   border-right: 1px solid gray;
   height: 80%;
-  width: 14%;
+  width: 15%;
 }
 div.navbox-menu {
   margin-top: 109%;
@@ -20,6 +20,23 @@ h3.menu {
 }
 h3.menu:hover {
   color: rgb(92, 159, 237);
+}
+span.inactive {
+  display: none;
+}
+span.active {
+  display: inline-block;
+}
+div.inactive {
+  display: none;
+}
+div.active {
+  .fade-in {
+    -webkit-transition: opacity 0.5s ease-in;
+         -moz-transition: opacity 0.5s ease-in;
+           -o-transition: opacity 0.5s ease-in;
+                                    opacity: 1;
+  }
 }
 
 /* FADE-IN ON MENU CLICK*/

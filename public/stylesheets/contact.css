@@ -1,7 +1,14 @@
-.footer {
+.aside {
   position: fixed;
-  width: 100%;
-  bottom: 0;
+  min-width: 7%;
+  max-width: 7%;
+  height: 80%;
+  left: 1%;
+  top: 8%;
+  border-right: 1px solid gray;
+}
+div.contact {
+  height: 135px;
 }
 
 i.contact {

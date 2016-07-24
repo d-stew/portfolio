@@ -1,13 +1,43 @@
-div.project {
-  height: 300px;
+div.navbox {
+  position: absolute;
+  margin-left: 6%;
+  top: 8%;
+  border-right: 1px solid gray;
+  height: 80%;
+  width: 14%;
 }
 
-h1#twang {
+div.navbox-menu {
+  margin-top: 109%;
+}
+
+
+.off {
+  opacity: 0;
+}
+.fade-in {
+  -webkit-transition: opacity 0.5s ease-in;
+       -moz-transition: opacity 0.5s ease-in;
+         -o-transition: opacity 0.5s ease-in;
+                                  opacity: 1;
+}
+
+h3.menu {
+  font-family: 'Raleway', sans-serif;
+  border-radius: 4px;
+  color: rgb(105, 105, 105);
+  padding: 2px;
+  margin-bottom: 2px;
+  /*text-align: center;*/
+}
+h3.menu:hover {
+  color: rgb(92, 159, 237);
+}
+
+
+/*h1#twang {
   font-family: 'Raleway', sans-serif;
 }
 h1#gogo {
   font-family: 'Pacifico', cursive;
-}
-img#speed {
-  padding-top: 5%;
-}
+}*/

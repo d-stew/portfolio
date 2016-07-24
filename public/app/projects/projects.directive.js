@@ -8,7 +8,18 @@
     return {
       restrict: 'E',
       templateUrl: '/app/projects/projects.directive.html',
-      controller: function () {
+      controller: function ($scope) {
+
+
+
+        $scope.show = function(id) {
+          console.log('fired')
+          document.getElementById('projects').className =
+            (document.getElementById('projects').className
+            .replace(/\boff\b/, 'fade-in'));
+
+        }
+
       }
     }
   }

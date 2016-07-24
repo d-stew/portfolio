@@ -6,20 +6,8 @@ div.navbox {
   height: 80%;
   width: 14%;
 }
-
 div.navbox-menu {
   margin-top: 109%;
-}
-
-
-.off {
-  opacity: 0;
-}
-.fade-in {
-  -webkit-transition: opacity 0.5s ease-in;
-       -moz-transition: opacity 0.5s ease-in;
-         -o-transition: opacity 0.5s ease-in;
-                                  opacity: 1;
 }
 
 h3.menu {
@@ -32,6 +20,25 @@ h3.menu {
 }
 h3.menu:hover {
   color: rgb(92, 159, 237);
+}
+
+/* FADE-IN ON MENU CLICK*/
+.off {
+  opacity: 0;
+}
+.fade-in {
+  -webkit-transition: opacity 0.5s ease-in;
+       -moz-transition: opacity 0.5s ease-in;
+         -o-transition: opacity 0.5s ease-in;
+                                  opacity: 1;
+}
+
+h4.projects {
+  display: inline-block;
+  border-radius: 4px;
+  color: rgb(105, 105, 105);
+  margin-right: 10%;
+  /*text-align: center;*/
 }
 
 

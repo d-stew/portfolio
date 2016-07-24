@@ -14,8 +14,8 @@
 
         $scope.show = function(id) {
           console.log('fired')
-          document.getElementById('projects').className =
-            (document.getElementById('projects').className
+          document.getElementById(id).className =
+            (document.getElementById(id).className
             .replace(/\boff\b/, 'fade-in'));
 
         }

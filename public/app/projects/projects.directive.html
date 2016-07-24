@@ -2,7 +2,6 @@
   <div class='row'>
 
     <div class='col-md-2 col-md-offset-1 navbox'>
-
       <div class='navbox-menu'>
         <h3 ng-click="show('projects')" class='menu'>PROJECTS</h3>
         <h3 ng-click="show('experience')" class='menu'>EXPERIENCE</h3>
@@ -10,17 +9,23 @@
         <h3 class='menu'>RESUME</h3>
         <h3 class='menu'>CONTACT</h3>
       </div>
-
     </div>
 
     <!-- PROJECTS -->
     <div class='col-md-9 col-md-offset-3 projects off' id='projects'>
-      <div class='menu'>
-        <h4 class='projects text-center' style="font-family: 'Raleway', sans-serif;">twang</h4>
-        <h4 class='projects text-center' style="font-family: 'Pacifico', cursive;">gogoColorado</h4>
-        <h4 class='projects text-center'>EasySpeak</h4>
-        <h4 class='projects text-center' style="font-family: 'Quicksand', sans-serif;">gnosh.</h4>
-        <h4 class='projects text-center'>Speed CandiDating</h4>
+      <div class='menu text-center'>
+        <h4 class='projects text-center' id='twang'>twang</h4>
+        <h4 class='projects text-center' id='gogo'>gogoColorado</h4>
+        <h4 class='projects text-center' id='easyspeak'>EasySpeak</h4>
+      </div>
+      <div class='menu text-center'>
+        <h4 class='projects text-center' id='gnosh'><b>gnosh.</b></h4>
+        <h4 class='projects text-center' id='speedCandi'>
+          <span id='speed'>Speed</span>
+          <span id='candi'>C a n d i D a t i n g</span>
+        </h4>
+        <!-- <img src='/images/speed-candi.png'> -->
+
       </div>
     </div>
 

@@ -18,6 +18,11 @@ h3.menu {
   margin-bottom: 2px;
   /*text-align: center;*/
 }
+div.menu-details > p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  padding-left: 5%;
+}
 h3.menu:hover {
   color: rgb(92, 159, 237);
 }

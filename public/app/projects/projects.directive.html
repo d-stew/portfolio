@@ -5,7 +5,7 @@
       <div class='navbox-menu'>
 
         <!-- PROJECTS SECTION -->
-        <h3 ng-click="show('projects')" class='menu'>
+        <h3 ng-click="show('projects')" class='menu' id='projects'>
           <span
             class="glyphicon glyphicon-plus"
             ng-class="{'active': active !== 'projects',
@@ -18,17 +18,17 @@
            </span>
           PROJECTS
         </h3>
-        <div class='menu-details' ng-class="{'active': active === 'projects', 'inactive': active !== 'projects'}">
-          <p>twang</p>
+        <div class='menu-details' id='projects' ng-class="{'active': active === 'projects', 'inactive': active !== 'projects'}">
+          <p>Twang</p>
           <p>gogoColorado</p>
           <p>EasySpeak</p>
-          <p>gnosh.</p>
+          <p>Gnosh</p>
           <p>Speed CandiDating</p>
         </div>
         <!-- END PROJECTS SECTION -->
 
         <!-- EXPERIENCE SECTION -->
-        <h3 ng-click="show('experience')" class='menu'>
+        <h3 ng-click="show('experience')" class='menu' id='experience'>
           <span
             class="glyphicon glyphicon-plus"
             ng-class="{'active': active !== 'experience',
@@ -41,13 +41,13 @@
            </span>
           EXPERIENCE
         </h3>
-        <div class='menu-details' ng-class="{'active': active === 'experience', 'inactive': active !== 'experience'}">
+        <div class='menu-details' id='experience' ng-class="{'active': active === 'experience', 'inactive': active !== 'experience'}">
           <p>Galvanize</p>
           <p>Tennyson Center for Children</p>
           <p>Hidden Valley Camp</p>
           <p>Australia</p>
           <p>Law Office of Curtis E. Shirley</p>
-          <p>Human Rights Intern</p>
+          <p>Local Bureau for the Defense of Human Rights</p>
         </div>
         <!-- END EXPERIENCE SECTION -->
 
@@ -67,50 +67,29 @@
       </div>
     </div>
 
-
-    <!-- <div class='col-md-9 col-md-offset-3 projects off' id='projects'>
-      <div class='menu text-center'>
-        <h4 class='projects text-center' id='twang'>twang</h4>
-        <h4 class='projects text-center' id='gogo'>gogoColorado</h4>
-        <h4 class='projects text-center' id='easyspeak'>EasySpeak</h4>
-      </div>
-      <div class='menu text-center'>
-        <h4 class='projects text-center' id='gnosh'><b>gnosh.</b></h4>
-        <h4 class='projects text-center' id='speedCandi'>Speed C a n d i D a t i n g</h4>
-        <img src='/images/speed-candi.png'>
-      </div>
-    </div> -->
     <div class='col-md-9 col-md-offset-3' id='typed'>
-      <script>
-      $(function(){
-          $(".typed").typed({
-              strings: ["Hi there!^1000 I'm Daniel. ^2000",
-              "Welcome to my portfolio site."],
-              typeSpeed: 10
-          });
-      });
-      </script>
       <span class="typed"></span>
     </div>
 
-    <!-- <div class='col-md-2 col-md-offset-3 projects off' id='experience'>
-      <div class='menu'>
-        <h4 class='menu text-center'>Youth Treatment Counselor</h4>
-        <p class='description'>Tennyson Center for Children</p>
-
-        <h4 class='menu text-center'>Program Director</h4>
-        <p class='description'>Hidden Valley Camp</p>
-
-        <h4 class='menu text-center'>Australia</h4>
-        <p class='description'></p>
-
-        <h4 class='menu text-center'>Legal Assistant</h4>
-        <p class='description'></p>
-
-        <h4 class='menu text-center'>Human Rights Intern</h4>
-        <p class='description'></p>
-      </div>
-    </div> -->
-
   </div>
 </div>
+
+<script>
+$(function(){
+  $(".typed").typed({
+    strings: ["Hi there!^1000 I'm Daniel. ^2000",
+    "Welcome to my portfolio site."],
+    typeSpeed: 10
+  });
+
+  $("h3#projects").click(function(){
+    $("div#projects").slideToggle();
+  });
+
+  $("h3#experience").click(function(){
+    $("div#experience").slideToggle();
+  });
+
+
+});
+</script>
